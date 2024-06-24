@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npx nodemon app.js", 
+    "start": "npx nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Benjamin Stevens",
@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "express": "^4.19.2",
+    "express-validator": "^7.1.0",
     "morgan": "^1.10.0",
     "pug": "^3.0.3"
   },

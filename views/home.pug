@@ -1,2 +1,13 @@
 extends layout 
 
+block main 
+  a.newNote(href="/home/new") + MAKE A NEW NOTE
+
+  if userNotes === undefined || userNotes.length === 0
+    p#no_notes Let's take some notes!
+  else 
+    ul#notes
+      each note in userNotes  
+        li
+          h3= note.getName()
+          p= note.getContents()

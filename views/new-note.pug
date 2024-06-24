@@ -1,0 +1,25 @@
+extends layout 
+
+block main 
+  form(action="/home" method="post")
+    dl
+      dt
+        label(for="noteTitle") Title:
+      dd
+        input(type="text"
+              id="noteTitle"
+              name="noteTitle"
+              placeholder="Note Title"
+              value=noteTitle)
+      dt
+        label(for="noteContents") Contents:
+      dd
+        input(type="text"
+              id="noteContents"
+              name="noteContents"
+              placeholder="Note Contents"
+              value=noteContents)
+
+    fieldset.actions
+      input(type="submit" value="Save")
+      a(href="/home") Cancel
